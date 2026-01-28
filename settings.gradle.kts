@@ -1,4 +1,5 @@
 pluginManagement {
+    // Define repositories for Gradle plugins
     repositories {
         google {
             content {
