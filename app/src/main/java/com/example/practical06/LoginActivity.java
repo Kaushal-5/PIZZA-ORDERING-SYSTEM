@@ -13,7 +13,11 @@ import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Activity for User Login.
+ */
 public class LoginActivity extends AppCompatActivity {
+    private static final String TAG = "LoginActivity";
     EditText et_phone, et_password;
     Button btn_login;
     TextView tv_signup_link;
