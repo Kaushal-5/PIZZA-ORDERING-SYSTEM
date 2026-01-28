@@ -26,4 +26,15 @@ public class Order {
         this.status = status;
         this.itemsDescription = itemsDescription;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId='" + orderId + '\'' +
+                ", date='" + date + '\'' +
+                ", amount=" + amount +
+                ", status='" + status + '\'' +
+                ", itemsDescription='" + itemsDescription + '\'' +
+                '}';
+    }
 }
