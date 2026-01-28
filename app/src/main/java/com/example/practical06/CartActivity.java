@@ -5,12 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Activity for managing the Shopping Cart.
+ */
 public class CartActivity extends AppCompatActivity {
+    private static final String TAG = "CartActivity";
     // TextViews for all items
     TextView tv_mexican_qty, tv_mexican_total;
+    // ... (rest of fields implicit, but I need to be careful with replace)
     TextView tv_cheesypizza_qty, tv_cheesypizza_total;
     TextView tv_italian_qty, tv_italian_total;
     TextView tv_margherita_qty, tv_margherita_total;
@@ -44,6 +50,7 @@ public class CartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: started");
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_cart);
 
