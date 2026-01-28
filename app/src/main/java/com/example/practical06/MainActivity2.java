@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -16,7 +17,11 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Activity for Order Confirmation and Coupon Application.
+ */
 public class MainActivity2 extends AppCompatActivity {
+    private static final String TAG = "MainActivity2";
     TextView tv_itemtotal, tv_gst, tv_platformfee, tv_deliveryfee, tv_total, tv_promocode, tv_final_total,
             tv_promo_status;
     Button btn_apply, btn_place_order;
@@ -53,6 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: started");
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main2);
 
