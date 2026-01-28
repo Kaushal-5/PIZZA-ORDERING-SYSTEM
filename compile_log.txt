@@ -1,0 +1,130 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/hp/.gradle/wrapper/dists/gradle-8.11.1-bin/bpt9gzteqjrbo1mjrsomdt32c/gradle-8.11.1/lib/native-platform-0.22-milestone-26.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeDebugResources
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac FAILED
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:86: error: cannot find symbol
+        tv_margherita_qty = findViewById(R.id.tv_margherita_qty);
+                                             ^
+  symbol:   variable tv_margherita_qty
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:87: error: cannot find symbol
+        tv_margherita_total = findViewById(R.id.tv_margherita_total);
+                                               ^
+  symbol:   variable tv_margherita_total
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:88: error: cannot find symbol
+        btn_margherita_plus = findViewById(R.id.btn_margherita_plus);
+                                               ^
+  symbol:   variable btn_margherita_plus
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:93: error: cannot find symbol
+        tv_pepperoni_qty = findViewById(R.id.tv_pepperoni_qty);
+                                            ^
+  symbol:   variable tv_pepperoni_qty
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:94: error: cannot find symbol
+        tv_pepperoni_total = findViewById(R.id.tv_pepperoni_total);
+                                              ^
+  symbol:   variable tv_pepperoni_total
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:95: error: cannot find symbol
+        btn_pepperoni_plus = findViewById(R.id.btn_pepperoni_plus);
+                                              ^
+  symbol:   variable btn_pepperoni_plus
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:100: error: cannot find symbol
+        tv_veggie_qty = findViewById(R.id.tv_veggie_qty);
+                                         ^
+  symbol:   variable tv_veggie_qty
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:101: error: cannot find symbol
+        tv_veggie_total = findViewById(R.id.tv_veggie_total);
+                                           ^
+  symbol:   variable tv_veggie_total
+  location: class id
+C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:102: error: cannot find symbol
+        btn_veggie_plus = findViewById(R.id.btn_veggie_plus);
+                                           ^
+  symbol:   variable btn_veggie_plus
+  location: class id
+9 errors
+[Incubating] Problems report is available at: file:///C:/PROJECTS/PizzaOrderingapp/practical06/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:86: error: cannot find symbol
+          tv_margherita_qty = findViewById(R.id.tv_margherita_qty);
+                                               ^
+    symbol:   variable tv_margherita_qty
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:87: error: cannot find symbol
+          tv_margherita_total = findViewById(R.id.tv_margherita_total);
+                                                 ^
+    symbol:   variable tv_margherita_total
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:88: error: cannot find symbol
+          btn_margherita_plus = findViewById(R.id.btn_margherita_plus);
+                                                 ^
+    symbol:   variable btn_margherita_plus
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:93: error: cannot find symbol
+          tv_pepperoni_qty = findViewById(R.id.tv_pepperoni_qty);
+                                              ^
+    symbol:   variable tv_pepperoni_qty
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:94: error: cannot find symbol
+          tv_pepperoni_total = findViewById(R.id.tv_pepperoni_total);
+                                                ^
+    symbol:   variable tv_pepperoni_total
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:95: error: cannot find symbol
+          btn_pepperoni_plus = findViewById(R.id.btn_pepperoni_plus);
+                                                ^
+    symbol:   variable btn_pepperoni_plus
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:100: error: cannot find symbol
+          tv_veggie_qty = findViewById(R.id.tv_veggie_qty);
+                                           ^
+    symbol:   variable tv_veggie_qty
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:101: error: cannot find symbol
+          tv_veggie_total = findViewById(R.id.tv_veggie_total);
+                                             ^
+    symbol:   variable tv_veggie_total
+    location: class id
+  C:\PROJECTS\PizzaOrderingapp\practical06\app\src\main\java\com\example\practical06\CartActivity.java:102: error: cannot find symbol
+          btn_veggie_plus = findViewById(R.id.btn_veggie_plus);
+                                             ^
+    symbol:   variable btn_veggie_plus
+    location: class id
+  9 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 7s
+16 actionable tasks: 16 executed

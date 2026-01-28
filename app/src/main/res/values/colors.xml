@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Modern Color Scheme -->
+    <color name="primary_dark">#1A1A2E</color>
+    <color name="primary">#16213E</color>
+    <color name="accent">#FF6B35</color>
+    <color name="accent_light">#FF8C5A</color>
+    <color name="success">#4CAF50</color>
+    <color name="card_background">#2A2A3E</color>
+    <color name="card_background_light">#3A3A4E</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#CCCCCC</color>
+    <color name="text_price">#FFD700</color>
+    <color name="divider">#404040</color>
+</resources>

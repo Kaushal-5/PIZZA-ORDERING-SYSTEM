@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#2E2E3E"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ORD-12345"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placed"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tv_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28/01/2026 12:00"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+            
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#404040"
+            android:layout_marginVertical="8dp"/>
+            
+        <TextView
+            android:id="@+id/tv_order_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Order"
+            android:textColor="#DDDDDD"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/tv_order_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹450"
+                android:textColor="#FFD700"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+                
+            <Button
+                android:id="@+id/btn_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Status"
+                android:backgroundTint="#FF6B35"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:minHeight="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
