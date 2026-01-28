@@ -33,12 +33,19 @@ android {
 
 dependencies {
 
+    // AndroidX Core and UI libraries
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // Unit Testing
     testImplementation(libs.junit)
+
+    // Android InstrumentedTesting
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Third-party libraries
     implementation(libs.gson)
 }
