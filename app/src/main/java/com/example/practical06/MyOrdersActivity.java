@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,8 +17,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Activity for displaying User's Order History.
+ */
 public class MyOrdersActivity extends AppCompatActivity {
 
+    private static final String TAG = "MyOrdersActivity";
     RecyclerView rvOrders;
     TextView tvNoOrders;
     SharedPreferences sharedPreferences;
@@ -27,6 +32,7 @@ public class MyOrdersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: started");
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_my_orders);
 
