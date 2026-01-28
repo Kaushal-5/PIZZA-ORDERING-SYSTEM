@@ -12,7 +12,11 @@ import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Main Activity handling the menu and ordering process.
+ */
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     SharedPreferences sharedPreferences;
     private static final String PREFS_NAME = "UserPrefs";
     private static final String KEY_IS_LOGGED_IN = "isLoggedIn";
