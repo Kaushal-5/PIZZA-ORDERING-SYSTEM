@@ -13,7 +13,11 @@ import android.util.Log;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * Activity for User Sign Up.
+ */
 public class SignUpActivity extends AppCompatActivity {
+    private static final String TAG = "SignUpActivity";
     EditText et_name, et_phone, et_password, et_confirm_password;
     Button btn_signup;
     TextView tv_login_link;
@@ -26,6 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: started");
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
 
