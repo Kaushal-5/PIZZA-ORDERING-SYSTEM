@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
     int total = 0;
 
     @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate: started");
         EdgeToEdge.enable(this);
 
         sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
